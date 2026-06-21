@@ -1,0 +1,96 @@
+
+============ Smart Telecom Network Monitoring & Service Optimization ============
+ 1. Incident Manager  - Report a new incident
+ 2. Incident Manager  - Show prioritized incidents (merge sort)
+ 3. Search Engine     - Find subscriber by ID (binary search)
+ 4. Search Engine     - Find device by ID (binary search)
+ 5. Config Rollback   - Save a config snapshot (stack push)
+ 6. Config Rollback   - Rollback last config change (stack pop)
+ 7. Service Queue     - Submit a service/fault request
+ 8. Service Queue     - Process next request (FIFO)
+ 9. AVL Database      - Find device + show tree height
+10. AVL Database      - Show all devices sorted (in-order)
+11. Network Graph     - Display topology
+12. Network Graph     - BFS from a device
+13. Network Graph     - DFS from a device
+14. Network Graph     - Shortest-latency path (Dijkstra)
+15. Hash Table        - Verify subscriber by phone (O(1))
+ 0. Exit
+====================================================================================
+Enter choice: 
+--- Incidents Prioritized (most critical first, merge sort) ---
+ID        Device    Sev     Description                 Time
+INC302    DEV2005   5       Core_router_offline         08:15
+INC301    DEV2003   4       High_packet_loss            08:10
+INC304    DEV2003   4       Repeated_timeouts           08:25
+INC303    DEV2001   2       Minor_signal_degradation    08:20
+
+Press ENTER to continue...
+============ Smart Telecom Network Monitoring & Service Optimization ============
+ 1. Incident Manager  - Report a new incident
+ 2. Incident Manager  - Show prioritized incidents (merge sort)
+ 3. Search Engine     - Find subscriber by ID (binary search)
+ 4. Search Engine     - Find device by ID (binary search)
+ 5. Config Rollback   - Save a config snapshot (stack push)
+ 6. Config Rollback   - Rollback last config change (stack pop)
+ 7. Service Queue     - Submit a service/fault request
+ 8. Service Queue     - Process next request (FIFO)
+ 9. AVL Database      - Find device + show tree height
+10. AVL Database      - Show all devices sorted (in-order)
+11. Network Graph     - Display topology
+12. Network Graph     - BFS from a device
+13. Network Graph     - DFS from a device
+14. Network Graph     - Shortest-latency path (Dijkstra)
+15. Hash Table        - Verify subscriber by phone (O(1))
+ 0. Exit
+====================================================================================
+Enter choice: 
+--- Network Topology (adjacency list) ---
+DEV2005: -> [DEV2004, 4ms]  -> [DEV2002, 15ms]  
+DEV2003: -> [DEV2002, 3.5ms]  -> [DEV2004, 8ms]  
+DEV2004: -> [DEV2003, 8ms]  -> [DEV2001, 12ms]  -> [DEV2005, 4ms]  
+DEV2002: -> [DEV2001, 5ms]  -> [DEV2003, 3.5ms]  -> [DEV2005, 15ms]  
+DEV2001: -> [DEV2002, 5ms]  -> [DEV2004, 12ms]  
+
+Press ENTER to continue...
+============ Smart Telecom Network Monitoring & Service Optimization ============
+ 1. Incident Manager  - Report a new incident
+ 2. Incident Manager  - Show prioritized incidents (merge sort)
+ 3. Search Engine     - Find subscriber by ID (binary search)
+ 4. Search Engine     - Find device by ID (binary search)
+ 5. Config Rollback   - Save a config snapshot (stack push)
+ 6. Config Rollback   - Rollback last config change (stack pop)
+ 7. Service Queue     - Submit a service/fault request
+ 8. Service Queue     - Process next request (FIFO)
+ 9. AVL Database      - Find device + show tree height
+10. AVL Database      - Show all devices sorted (in-order)
+11. Network Graph     - Display topology
+12. Network Graph     - BFS from a device
+13. Network Graph     - DFS from a device
+14. Network Graph     - Shortest-latency path (Dijkstra)
+15. Hash Table        - Verify subscriber by phone (O(1))
+ 0. Exit
+====================================================================================
+Enter choice: Source Device ID: Destination Device ID: Route: DEV2001 -> DEV2004 -> DEV2005
+Total latency: 16 ms
+
+Press ENTER to continue...
+============ Smart Telecom Network Monitoring & Service Optimization ============
+ 1. Incident Manager  - Report a new incident
+ 2. Incident Manager  - Show prioritized incidents (merge sort)
+ 3. Search Engine     - Find subscriber by ID (binary search)
+ 4. Search Engine     - Find device by ID (binary search)
+ 5. Config Rollback   - Save a config snapshot (stack push)
+ 6. Config Rollback   - Rollback last config change (stack pop)
+ 7. Service Queue     - Submit a service/fault request
+ 8. Service Queue     - Process next request (FIFO)
+ 9. AVL Database      - Find device + show tree height
+10. AVL Database      - Show all devices sorted (in-order)
+11. Network Graph     - Display topology
+12. Network Graph     - BFS from a device
+13. Network Graph     - DFS from a device
+14. Network Graph     - Shortest-latency path (Dijkstra)
+15. Hash Table        - Verify subscriber by phone (O(1))
+ 0. Exit
+====================================================================================
+Enter choice: Exiting Telecom Monitoring System. Goodbye!
